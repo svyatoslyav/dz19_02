@@ -1,0 +1,11 @@
+from tkinter import *
+window = Tk()
+window.geometry("300x250")
+window.title("Auto Clicker")
+window.config(bg="#def6fa")
+Label(window, font=("",24),text="Auto Clicker", bg="#def6fa", pady=10, fg="#027870").place(relx=0.5, rely=0.1, anchor="center")
+Label(window, font=("",14),text="Кліків на секунду:", bg="#def6fa", pady=10, fg="#027870").place(relx=0.5, rely=0.25, anchor="center")
+Entry(window, font=("",16)).place(relx=0.5, rely=0.3125, anchor="n")
+Button(window, bg="#4dae4f",activebackground="#4dae4f", text="Почати", fg="white").place(relx=0.4, rely=0.5, anchor="center")
+Button(window, bg="#f44132",activebackground="#f44132", text="Вийти", fg="white", command=lambda: window.destroy()).place(relx=0.6, rely=0.5, anchor="center")
+window.mainloop()
